@@ -12,3 +12,12 @@ a {
     all: unset;
     cursor: pointer;
 }
+
+html {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    background-color: $color-almost-white;
+}

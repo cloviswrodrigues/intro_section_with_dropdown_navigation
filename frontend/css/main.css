@@ -9,4 +9,13 @@ a {
   cursor: pointer;
 }
 
+html {
+  font-family: "Epilogue", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 98%);
+}
+
 /*# sourceMappingURL=main.css.map */
