@@ -1,0 +1,10 @@
+.btn-link {
+    border: 1px solid $color-medium-gray;
+    padding: 1rem 1.8rem;
+    border-radius: 1rem;
+
+    &:hover {
+        border-color: $color-almost-black;
+        color: $color-almost-black;            
+    }
+}

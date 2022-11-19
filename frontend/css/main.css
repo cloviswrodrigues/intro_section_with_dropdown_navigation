@@ -18,4 +18,68 @@ body {
   background-color: hsl(0deg, 0%, 98%);
 }
 
+li {
+  list-style-type: none;
+}
+
+.header {
+  width: 95%;
+  height: 2rem;
+  display: flex;
+  max-width: 144rem;
+  margin: 2.5rem auto 0 auto;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 41%);
+}
+.header__logo {
+  margin-right: 5rem;
+}
+.header__group-menus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header__menu {
+  display: flex;
+  gap: 4rem;
+}
+.header__dropdown {
+  position: relative;
+}
+.header__dropdown::after {
+  content: "";
+  width: 2rem;
+  height: 0.8rem;
+  display: inline-block;
+  background: url(../images/icon-arrow-down.svg) no-repeat center;
+}
+.header__dropdown:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+.header__submenu {
+  opacity: 0;
+  position: absolute;
+  top: 5rem;
+}
+.header__link:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+.header__menu-right {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.btn-link {
+  border: 1px solid hsl(0deg, 0%, 41%);
+  padding: 1rem 1.8rem;
+  border-radius: 1rem;
+}
+.btn-link:hover {
+  border-color: hsl(0deg, 0%, 8%);
+  color: hsl(0deg, 0%, 8%);
+}
+
 /*# sourceMappingURL=main.css.map */
