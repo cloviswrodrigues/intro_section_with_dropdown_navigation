@@ -134,4 +134,14 @@ li {
   gap: 4rem;
 }
 
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0.5rem;
+  text-align: center;
+}
+.footer__attribution a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=main.css.map */
