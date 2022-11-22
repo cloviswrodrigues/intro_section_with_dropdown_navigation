@@ -58,4 +58,31 @@
         gap: 4rem;
         align-items: center;
     }
+
+    &__menu-mobile,
+    &__icon-close-menu {
+        display: none;
+    }
+
+    @media screen and (max-width: $break-mobile) {
+        width: 90%;
+        justify-content: space-between;
+
+
+        &__menu-mobile {
+            display: block;
+        }
+
+        &__group-menus {
+            width: auto;
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__menu-right {
+            display: none;
+        }
+    }
 }
