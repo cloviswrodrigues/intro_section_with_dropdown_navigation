@@ -41,11 +41,17 @@
         }
 
         a {
-            background-color: $color-almost-black;
+            background-color: $color-almost-black;            
+            border: 1px solid $color-almost-black;
             font-size: 1.6rem;
             color: $color-almost-white;
             padding: 1.5rem 3rem;
             border-radius: 10px;
+
+            &:hover {
+                background-color: $color-almost-white;
+                color: $color-almost-black;
+            }
         }
     }
 
