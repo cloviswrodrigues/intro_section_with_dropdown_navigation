@@ -68,4 +68,45 @@
         display: flex;
         gap: 4rem;
     }
+
+    @media screen and (max-width: $break-mobile) {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 2rem auto 0 auto;
+        gap: 3rem;
+        align-items: inherit;
+
+        &__content {
+            order: 2;
+            text-align: center;
+            
+            h1 {
+                font-size: 3.4rem;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                width: 95%;
+                margin: 0 auto;
+                margin-bottom: 4rem;
+            }
+        }
+
+        &__img-hero {
+            height: 40vh;
+            background: url(../images/image-hero-mobile.png) no-repeat center;
+            background-size: contain;
+            order: 1;
+        }
+
+        &__clients {
+            gap: 0;
+
+            svg {
+                transform: scale(.7);
+            }
+        }
+
+    }
 }
