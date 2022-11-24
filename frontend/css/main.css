@@ -28,7 +28,9 @@ li {
 }
 
 .active {
-  display: block;
+  display: block !important;
+  z-index: 1 !important;
+  opacity: 1 !important;
 }
 
 .header {
@@ -54,6 +56,9 @@ li {
   display: flex;
   gap: 4rem;
 }
+.header__menu-item {
+  position: relative;
+}
 .header__dropdown {
   position: relative;
 }
@@ -68,9 +73,19 @@ li {
   color: hsl(0deg, 0%, 8%);
 }
 .header__submenu {
+  width: 15rem;
   opacity: 0;
   position: absolute;
-  top: 5rem;
+  top: 3rem;
+  right: 0;
+  z-index: -1;
+  padding: 2rem;
+  background-color: hsl(0deg, 0%, 98%);
+  border-radius: 10px;
+  box-shadow: 1px 1px 30px rgba(20, 20, 20, 0.2);
+}
+.header__submenu li ~ li {
+  margin-top: 2rem;
 }
 .header__link:hover {
   color: hsl(0deg, 0%, 8%);
@@ -197,6 +212,58 @@ li {
   .section__clients svg {
     transform: scale(0.7);
   }
+}
+
+.icon-todo {
+  display: flex;
+  align-items: center;
+}
+.icon-todo::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/icon-todo.svg) no-repeat;
+  margin-right: 1rem;
+}
+
+.icon-calendar {
+  display: flex;
+  align-items: center;
+}
+.icon-calendar::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/icon-calendar.svg) no-repeat;
+  margin-right: 1rem;
+}
+
+.icon-reminders {
+  display: flex;
+  align-items: center;
+}
+.icon-reminders::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 17px;
+  background: url(../images/icon-reminders.svg) no-repeat;
+  margin-right: 1rem;
+}
+
+.icon-planning {
+  display: flex;
+  align-items: center;
+}
+.icon-planning::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/icon-planning.svg) no-repeat;
+  margin-right: 1rem;
 }
 
 .footer {

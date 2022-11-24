@@ -110,3 +110,8 @@
 
     }
 }
+
+@include icon(16px, 16px, 'todo');
+@include icon(16px, 16px, 'calendar');
+@include icon(16px, 17px, 'reminders');
+@include icon(16px, 16px, 'planning');

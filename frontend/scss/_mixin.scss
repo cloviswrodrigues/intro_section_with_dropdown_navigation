@@ -1,0 +1,15 @@
+@mixin icon($width, $height, $name) {
+    .icon-#{$name}{
+        display: flex;
+        align-items: center;
+        
+        &::before {
+            content: '';
+            display: inline-block;
+            width: #{$width};
+            height: #{$height};
+            background: url(../images/icon-#{$name}.svg) no-repeat;
+            margin-right: 1rem;
+        }
+    }   
+}

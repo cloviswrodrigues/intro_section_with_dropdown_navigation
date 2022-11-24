@@ -34,5 +34,7 @@ li {
 }
 
 .active {
-    display: block;
+    display: block !important;
+    z-index: 1 !important;
+    opacity: 1 !important;
 }
