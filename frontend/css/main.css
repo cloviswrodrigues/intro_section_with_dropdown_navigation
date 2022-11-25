@@ -72,6 +72,9 @@ li {
 .header__dropdown:hover {
   color: hsl(0deg, 0%, 8%);
 }
+.header .dropdown-active::after {
+  background: url(../images/icon-arrow-up.svg) no-repeat center;
+}
 .header__submenu {
   width: 15rem;
   opacity: 0;

@@ -44,6 +44,12 @@
         }
     }
 
+    .dropdown-active {
+        &::after {
+            background: url(../images/icon-arrow-up.svg) no-repeat center;
+        }
+    }
+
     &__submenu {
         width: 15rem;
         opacity: 0;
