@@ -51,13 +51,22 @@
         top: 3rem;
         right: 0;
         z-index: -1;
-        padding: 2rem;
+        padding: 2.5rem;
         background-color: $color-almost-white;
         border-radius: 10px;
         box-shadow: 1px 1px 30px rgba($color-almost-black, .2);
 
         li ~ li {
             margin-top: 2rem;
+        }
+
+        li:hover {
+            color: $color-almost-black;
+        }
+
+        &--right {
+            left: 0;
+            right: auto;
         }
     }
 

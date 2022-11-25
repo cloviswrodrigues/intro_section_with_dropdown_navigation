@@ -79,13 +79,20 @@ li {
   top: 3rem;
   right: 0;
   z-index: -1;
-  padding: 2rem;
+  padding: 2.5rem;
   background-color: hsl(0deg, 0%, 98%);
   border-radius: 10px;
   box-shadow: 1px 1px 30px rgba(20, 20, 20, 0.2);
 }
 .header__submenu li ~ li {
   margin-top: 2rem;
+}
+.header__submenu li:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+.header__submenu--right {
+  left: 0;
+  right: auto;
 }
 .header__link:hover {
   color: hsl(0deg, 0%, 8%);
