@@ -1,6 +1,11 @@
 const menuDropdown = document.querySelectorAll('.js-menu-dropdown');
+const iconMenu = document.querySelector('.js-icon-menu');
+const iconClose = document.querySelector('.js-icon-close');
+const btnMenuMobile = document.querySelector('.js-btn-mobile');
+const menuMobile = document.querySelector('.js-menu-mobile');
+const body = document.querySelector('body')
 
-console.log(menuDropdown)
+
 
 function openSubMenu(e) {
     hiddenAllSubMenu();
@@ -10,7 +15,6 @@ function openSubMenu(e) {
 
     dropDown.classList.add('dropdown-active');
     subMenu.classList.add('active');
-    console.log(subMenu);
 }
 
 function hiddenAllSubMenu(){
@@ -24,7 +28,6 @@ function hiddenAllSubMenu(){
 }
 
 menuDropdown.forEach((e) => {
-    console.log('foreach')
     e.addEventListener('click', openSubMenu)
 })
 
@@ -34,3 +37,12 @@ window.addEventListener('mouseup', (e) => {
         hiddenAllSubMenu();
     }
 })
+
+function toggleMenuMobile(e) {
+    iconMenu.classList.toggle('active');
+    iconClose.classList.toggle('active');
+    body.classList.toggle('darken');
+    menuMobile.classList.toggle('active-menu');
+}
+
+btnMenuMobile.addEventListener('click', toggleMenuMobile)

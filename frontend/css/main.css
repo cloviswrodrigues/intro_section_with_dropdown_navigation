@@ -35,7 +35,7 @@ li {
 
 .header {
   width: 95%;
-  height: 2rem;
+  height: 2.6rem;
   display: flex;
   max-width: 144rem;
   margin: 2.5rem auto 0 auto;
@@ -105,26 +105,75 @@ li {
   gap: 4rem;
   align-items: center;
 }
-.header__menu-mobile, .header__icon-close-menu {
+.header__menu-mobile, .header__icon-menu, .header__icon-close-menu {
   display: none;
 }
 @media screen and (max-width: 800px) {
   .header {
     width: 90%;
     justify-content: space-between;
+    overflow-x: hidden;
   }
   .header__menu-mobile {
     display: block;
+    z-index: 2;
   }
   .header__group-menus {
-    width: auto;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 64%;
+    height: 100vh;
+    background-color: hsl(0deg, 0%, 98%);
+    z-index: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 10rem 2rem;
+    font-size: 1.6rem;
+    transition: 0.6s;
   }
   .header__menu {
-    display: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .header__submenu {
+    width: 100%;
+    height: 0;
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+    padding: 0;
+    background-color: none;
+    box-shadow: none;
+    border-radius: inherit;
+    transition: 0.4s;
+    overflow-y: hidden;
+  }
+  .header__submenu.active {
+    height: 130px;
+    margin-bottom: 2rem;
   }
   .header__menu-right {
-    display: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.4rem;
   }
+  .header__menu-right .btn-link {
+    width: 80%;
+    display: block;
+    text-align: center;
+  }
+}
+
+.active-menu {
+  left: 36%;
 }
 
 .btn-link {
@@ -224,6 +273,18 @@ li {
   .section__clients svg {
     transform: scale(0.7);
   }
+}
+
+.darken::before {
+  content: "";
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsl(0deg, 0%, 8%);
+  opacity: 0.8;
+  z-index: 1;
 }
 
 .icon-todo {
