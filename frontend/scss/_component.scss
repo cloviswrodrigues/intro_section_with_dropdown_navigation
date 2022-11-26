@@ -101,6 +101,8 @@
         }
 
         &__clients {
+            width: 100%;
+            justify-content: center;
             gap: 0;
 
             svg {
