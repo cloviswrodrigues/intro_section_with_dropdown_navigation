@@ -112,7 +112,6 @@ li {
   .header {
     width: 90%;
     justify-content: space-between;
-    overflow-x: hidden;
   }
   .header__menu-mobile {
     display: block;
